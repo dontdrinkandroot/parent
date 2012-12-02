@@ -4,6 +4,8 @@
 	<artifactId>parent</artifactId>
 	<version>2-SNAPSHOT</version>
 	<packaging>pom</packaging>
+	
+	<url>http://dontdrinkandroot.net</url>
 
 	<prerequisites>
 		<maven>2.2.1</maven>
