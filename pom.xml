@@ -28,7 +28,7 @@
 		<com.googlecode.charts4j.version>1.3</com.googlecode.charts4j.version>
 		<jstl.version>1.2</jstl.version>
 		<net.sourceforge.collections.version>4.01</net.sourceforge.collections.version>
-		<org.slf4j.version>1.6.6</org.slf4j.version>
+		<org.slf4j.version>1.7.2</org.slf4j.version>
 		<jaudiotagger.version>2.0.3</jaudiotagger.version>
 		<cglib.version>2.2.2</cglib.version>
 		<com.restfb.version>1.6.11</com.restfb.version>
