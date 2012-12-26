@@ -47,7 +47,7 @@
 		<org.apache.commons.dbcp.version>1.4</org.apache.commons.dbcp.version>
 		<org.apache.commons.lang3.version>3.1</org.apache.commons.lang3.version>
 		<commons-io.version>2.4</commons-io.version>
-		<commons-codec.version>1.6</commons-codec.version>
+		<commons-codec.version>1.7</commons-codec.version>
 
 		<!-- plugins -->
 		<emma-maven-plugin.version>1.0-alpha-3</emma-maven-plugin.version>
