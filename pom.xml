@@ -13,7 +13,7 @@
 
 	<properties>
 
-		<org.apache.wicket.version>6.3.0</org.apache.wicket.version>
+		<org.apache.wicket.version>6.4.0</org.apache.wicket.version>
 		<org.springframework.spring.version>3.1.3.RELEASE</org.springframework.spring.version>
 		<jetty.version>8.0.1.v20110908</jetty.version>
 		<junit.version>4.11</junit.version>
