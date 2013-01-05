@@ -83,7 +83,7 @@
 	</distributionManagement>
 	
 	<scm>
-		<developerConnection>scm:git:https://github.com/philipsorst/parent.git</developerConnection>
+		<developerConnection>scm:git:https://github.com/dontdrinkandroot/parent.git</developerConnection>
 	</scm>
 
 	<build>
