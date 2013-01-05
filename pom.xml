@@ -4,7 +4,7 @@
 	<artifactId>parent</artifactId>
 	<version>3-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	
+	<organization>dontdrinkandroot</organization>
 	<url>http://dontdrinkandroot.net</url>
 
 	<prerequisites>
