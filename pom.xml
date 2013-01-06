@@ -4,8 +4,11 @@
 	<artifactId>parent</artifactId>
 	<version>3-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<organization>dontdrinkandroot</organization>
-	<url>http://dontdrinkandroot.net</url>
+	
+	<organization>
+		<name>dontdrinkandroot</name>
+		<url>http://dontdrinkandroot.net</url>
+	</organization>
 
 	<prerequisites>
 		<maven>2.2.1</maven>
