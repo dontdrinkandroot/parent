@@ -36,6 +36,7 @@
 		<org.codehaus.jackson.version>1.9.11</org.codehaus.jackson.version>
 		<net.sf.jung.version>2.0.1</net.sf.jung.version>
 		<com.itextpdf.version>5.1.1</com.itextpdf.version>
+		<com.github.rjeschke.txtmark.version>0.7</com.github.rjeschke.txtmark.version>
 
 		<!-- hibernate -->
 		<org.hibernate.version>4.1.6.Final</org.hibernate.version>
@@ -369,6 +370,12 @@
 				<artifactId>itextpdf</artifactId>
 				<version>${com.itextpdf.version}</version>
 			</dependency>
+			
+			<dependency>
+				<groupId>com.github.rjeschke</groupId>
+				<artifactId>txtmark</artifactId>
+				<version>${com.github.rjeschke.txtmark.version}</version>
+		</dependency>
 
 		</dependencies>
 	</dependencyManagement>
