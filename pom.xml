@@ -18,6 +18,7 @@
 
 		<org.apache.wicket.version>6.5.0</org.apache.wicket.version>
 		<org.springframework.spring.version>3.2.0.RELEASE</org.springframework.spring.version>
+		<org.springframework.security.version>3.1.3.RELEASE</org.springframework.security.version>
 		<jetty.version>8.0.1.v20110908</jetty.version>
 		<junit.version>4.11</junit.version>
 		<jaxb.version>2.2.4-1</jaxb.version>
@@ -40,6 +41,9 @@
 		<net.sf.jung.version>2.0.1</net.sf.jung.version>
 		<com.itextpdf.version>5.3.4</com.itextpdf.version>
 		<com.github.rjeschke.txtmark.version>0.7</com.github.rjeschke.txtmark.version>
+		
+		<!-- Spring Security -->
+		
 
 		<!-- hibernate -->
 		<org.hibernate.version>4.1.9.Final</org.hibernate.version>
@@ -232,6 +236,20 @@
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-core</artifactId>
 				<version>${org.springframework.spring.version}</version>
+			</dependency>
+			
+			<!-- Spring Security -->
+			
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-web</artifactId>
+				<version>${org.springframework.security.version}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-config</artifactId>
+				<version>${org.springframework.security.version}</version>
 			</dependency>
 
 			<!-- Apache Commons -->
