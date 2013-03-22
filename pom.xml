@@ -17,14 +17,14 @@
 	<properties>
 
 		<org.apache.wicket.version>6.6.0</org.apache.wicket.version>
-		<org.springframework.spring.version>3.2.0.RELEASE</org.springframework.spring.version>
+		<org.springframework.spring.version>3.2.2.RELEASE</org.springframework.spring.version>
 		<org.springframework.security.version>3.1.3.RELEASE</org.springframework.security.version>
 		<jetty.version>8.0.1.v20110908</jetty.version>
 		<junit.version>4.11</junit.version>
 		<jaxb.version>2.2.4-1</jaxb.version>
 		<org.apache.httpcomponents.httpclient.version>4.2.2</org.apache.httpcomponents.httpclient.version>
 		<org.hsqldb.version>2.2.9</org.hsqldb.version>
-		<mysql-connector-java.version>5.1.22</mysql-connector-java.version>
+		<mysql-connector-java.version>5.1.24</mysql-connector-java.version>
 		<javax.servlet.version>2.5</javax.servlet.version>
 		<com.melloware.jspiff.version>1.0</com.melloware.jspiff.version>
 		<org.ccil.cowan.tagsoup.version>1.2.1</org.ccil.cowan.tagsoup.version>
@@ -32,19 +32,19 @@
 		<com.googlecode.charts4j.version>1.3</com.googlecode.charts4j.version>
 		<jstl.version>1.2</jstl.version>
 		<net.sourceforge.collections.version>4.01</net.sourceforge.collections.version>
-		<org.slf4j.version>1.7.2</org.slf4j.version>
+		<org.slf4j.version>1.7.4</org.slf4j.version>
 		<jaudiotagger.version>2.0.3</jaudiotagger.version>
 		<cglib.version>2.2.2</cglib.version>
-		<com.restfb.version>1.6.11</com.restfb.version>
+		<com.restfb.version>1.6.12</com.restfb.version>
 		<jaxen.version>1.1.4</jaxen.version>
-		<org.codehaus.jackson.version>1.9.11</org.codehaus.jackson.version>
+		<org.codehaus.jackson.version>1.9.12</org.codehaus.jackson.version>
 		<net.sf.jung.version>2.0.1</net.sf.jung.version>
-		<com.itextpdf.version>5.3.4</com.itextpdf.version>
-		<com.github.rjeschke.txtmark.version>0.7</com.github.rjeschke.txtmark.version>
+		<com.itextpdf.version>5.4.0</com.itextpdf.version>
+		<com.github.rjeschke.txtmark.version>0.8</com.github.rjeschke.txtmark.version>
 		
 		<!-- hibernate -->
-		<org.hibernate.version>4.1.9.Final</org.hibernate.version>
-		<org.hibernate.search.version>4.1.1.Final</org.hibernate.search.version>
+		<org.hibernate.version>4.2.0.Final</org.hibernate.version>
+		<org.hibernate.search.version>4.2.0.Final</org.hibernate.search.version>
 		<org.hibernate.jpamodelgen.version>1.2.0.Final</org.hibernate.jpamodelgen.version>
 
 		<!-- apache commons -->
