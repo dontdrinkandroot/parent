@@ -9,6 +9,14 @@
 		<name>dontdrinkandroot</name>
 		<url>http://dontdrinkandroot.net</url>
 	</organization>
+	
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
 
 	<prerequisites>
 		<maven>2.2.1</maven>
@@ -16,11 +24,16 @@
 
 	<properties>
 
-		<org.apache.wicket.version>6.6.0</org.apache.wicket.version>
+		<emma-maven-plugin.version>1.0-alpha-3</emma-maven-plugin.version>
+		<versions-maven-plugin.version>2.0</versions-maven-plugin.version>
+		<maven-license-plugin.version>1.9.0</maven-license-plugin.version>
+		<junit.version>4.11</junit.version>
+		<org.slf4j.version>1.7.4</org.slf4j.version>
+
+		<!-- <org.apache.wicket.version>6.6.0</org.apache.wicket.version>
 		<org.springframework.spring.version>3.2.2.RELEASE</org.springframework.spring.version>
 		<org.springframework.security.version>3.1.3.RELEASE</org.springframework.security.version>
 		<jetty.version>8.0.1.v20110908</jetty.version>
-		<junit.version>4.11</junit.version>
 		<jaxb.version>2.2.4-1</jaxb.version>
 		<org.apache.httpcomponents.httpclient.version>4.2.2</org.apache.httpcomponents.httpclient.version>
 		<org.hsqldb.version>2.2.9</org.hsqldb.version>
@@ -32,7 +45,6 @@
 		<com.googlecode.charts4j.version>1.3</com.googlecode.charts4j.version>
 		<jstl.version>1.2</jstl.version>
 		<net.sourceforge.collections.version>4.01</net.sourceforge.collections.version>
-		<org.slf4j.version>1.7.4</org.slf4j.version>
 		<jaudiotagger.version>2.0.3</jaudiotagger.version>
 		<cglib.version>2.2.2</cglib.version>
 		<com.restfb.version>1.6.12</com.restfb.version>
@@ -40,26 +52,20 @@
 		<org.codehaus.jackson.version>1.9.12</org.codehaus.jackson.version>
 		<net.sf.jung.version>2.0.1</net.sf.jung.version>
 		<com.itextpdf.version>5.4.0</com.itextpdf.version>
-		<com.github.rjeschke.txtmark.version>0.8</com.github.rjeschke.txtmark.version>
+		<com.github.rjeschke.txtmark.version>0.8</com.github.rjeschke.txtmark.version> -->
 		
 		<!-- hibernate -->
-		<org.hibernate.version>4.2.0.Final</org.hibernate.version>
+		<!-- <org.hibernate.version>4.2.0.Final</org.hibernate.version>
 		<org.hibernate.search.version>4.2.0.Final</org.hibernate.search.version>
-		<org.hibernate.jpamodelgen.version>1.2.0.Final</org.hibernate.jpamodelgen.version>
+		<org.hibernate.jpamodelgen.version>1.2.0.Final</org.hibernate.jpamodelgen.version> -->
 
 		<!-- apache commons -->
-		<org.apache.commons.exec.version>1.1</org.apache.commons.exec.version>
+		<!-- <org.apache.commons.exec.version>1.1</org.apache.commons.exec.version>
 		<org.apache.commons.dbcp.version>1.4</org.apache.commons.dbcp.version>
 		<org.apache.commons.lang3.version>3.1</org.apache.commons.lang3.version>
 		<commons-io.version>2.4</commons-io.version>
-		<commons-codec.version>1.7</commons-codec.version>
-
-		<!-- plugins -->
-		<emma-maven-plugin.version>1.0-alpha-3</emma-maven-plugin.version>
-		<maven-surefire-plugin.version>2.12.4</maven-surefire-plugin.version>
-		<maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
-		<versions-maven-plugin.version>1.3.1</versions-maven-plugin.version>
-		<maven-license-plugin.version>1.9.0</maven-license-plugin.version>
+		<commons-codec.version>1.7</commons-codec.version> -->
+		
 	</properties>
 
 	<repositories>
@@ -98,17 +104,10 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${maven-compiler-plugin.version}</version>
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
 				</configuration>
-			</plugin>
-
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-plugin</artifactId>
-				<version>${maven-surefire-plugin.version}</version>
 			</plugin>
 
 			<plugin>
@@ -138,10 +137,16 @@
 
 	<dependencyManagement>
 		<dependencies>
+		
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-log4j12</artifactId>
+				<version>${org.slf4j.version}</version>
+			</dependency>
 
 			<!-- org.apache.wicket -->
 
-			<dependency>
+			<!-- <dependency>
 				<groupId>org.apache.wicket</groupId>
 				<artifactId>wicket-spring</artifactId>
 				<version>${org.apache.wicket.version}</version>
@@ -169,11 +174,11 @@
 				<groupId>org.apache.wicket</groupId>
 				<artifactId>wicket-auth-roles</artifactId>
 				<version>${org.apache.wicket.version}</version>
-			</dependency>
+			</dependency> -->
 
 			<!-- org.hibernate -->
 
-			<dependency>
+			<!-- <dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-search</artifactId>
 				<version>${org.hibernate.search.version}</version>
@@ -195,11 +200,11 @@
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-ehcache</artifactId>
 				<version>${org.hibernate.version}</version>
-			</dependency>
+			</dependency> -->
 
 			<!-- org.springframework -->
 
-			<dependency>
+			<!-- <dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-context</artifactId>
 				<version>${org.springframework.spring.version}</version>
@@ -239,11 +244,11 @@
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-core</artifactId>
 				<version>${org.springframework.spring.version}</version>
-			</dependency>
+			</dependency> -->
 			
 			<!-- Spring Security -->
 			
-			<dependency>
+			<!-- <dependency>
 				<groupId>org.springframework.security</groupId>
 				<artifactId>spring-security-web</artifactId>
 				<version>${org.springframework.security.version}</version>
@@ -253,11 +258,11 @@
 				<groupId>org.springframework.security</groupId>
 				<artifactId>spring-security-config</artifactId>
 				<version>${org.springframework.security.version}</version>
-			</dependency>
+			</dependency> -->
 
 			<!-- Apache Commons -->
 
-			<dependency>
+			<!-- <dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-exec</artifactId>
 				<version>${org.apache.commons.exec.version}</version>
@@ -285,11 +290,11 @@
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
 				<version>${org.apache.commons.lang3.version}</version>
-			</dependency>
+			</dependency> -->
 
 			<!-- net.sf.jung -->
 
-			<dependency>
+			<!-- <dependency>
 				<groupId>net.sf.jung</groupId>
 				<artifactId>jung-api</artifactId>
 				<version>${net.sf.jung.version}</version>
@@ -311,28 +316,22 @@
 				<groupId>net.sf.jung</groupId>
 				<artifactId>jung-io</artifactId>
 				<version>${net.sf.jung.version}</version>
-			</dependency>
+			</dependency> -->
 
 			<!-- org.slf4j -->
 
-			<dependency>
+			<!-- <dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
 				<version>${org.slf4j.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-log4j12</artifactId>
-				<version>${org.slf4j.version}</version>
-			</dependency>
+			</dependency> -->
 
 			<!-- various -->
 
-			<dependency>
+			<!-- <dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
-				<version>${junit.version}</version>
+				
 			</dependency>
 
 			<dependency>
@@ -423,18 +422,27 @@
 				<groupId>com.github.rjeschke</groupId>
 				<artifactId>txtmark</artifactId>
 				<version>${com.github.rjeschke.txtmark.version}</version>
-		</dependency>
+		</dependency>-->
 
 		</dependencies>
 	</dependencyManagement>
 
 	<dependencies>
+	
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${org.slf4j.version}</version>
+		</dependency>
+	
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
 			<type>jar</type>
 			<scope>test</scope>
 		</dependency>
+		
 	</dependencies>
 
 </project>
