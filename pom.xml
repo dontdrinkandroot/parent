@@ -100,6 +100,13 @@
 				<version>${maven-license-plugin.version}</version>
 				<configuration>
 					<header>LICENSE</header>
+					<strictCheck>true</strictCheck>
+					<excludes>
+						<exclude>**/README</exclude>
+						<exclude>**/README.md</exclude>
+						<exclude>**/LICENSE</exclude>
+						<exclude>**/.gitignore</exclude>
+					</excludes>
 				</configuration>
 			</plugin>
 
