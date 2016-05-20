@@ -20,7 +20,7 @@
 	</licenses>
 
 	<prerequisites>
-		<maven>2.2.1</maven>
+		<maven>3.0</maven>
 	</prerequisites>
 
 	<properties>
@@ -30,7 +30,7 @@
 		<version.maven-compiler-plugin>3.5.1</version.maven-compiler-plugin>
 		<version.maven-surefire-plugin>2.19.1</version.maven-surefire-plugin>
 		<version.junit>4.12</version.junit>
-		<version.org.slf4j>1.7.20</version.org.slf4j>
+		<version.org.slf4j>1.7.21</version.org.slf4j>
 	</properties>
 
 	<repositories>
@@ -71,8 +71,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${version.maven-compiler-plugin}</version>
 				<configuration>
-					<source>7</source>
-					<target>7</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 			</plugin>
 
