@@ -24,6 +24,7 @@
 	</prerequisites>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<version.versions-maven-plugin>2.2</version.versions-maven-plugin>
 		<version.maven-license-plugin>1.10.b1</version.maven-license-plugin>
 		<version.maven-compiler-plugin>3.5.1</version.maven-compiler-plugin>
