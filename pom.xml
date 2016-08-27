@@ -26,7 +26,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<version.versions-maven-plugin>2.2</version.versions-maven-plugin>
-		<version.maven-license-plugin>1.10.b1</version.maven-license-plugin>
+		<version.license-maven-plugin>3.0</version.license-maven-plugin>
 		<version.maven-compiler-plugin>3.5.1</version.maven-compiler-plugin>
 		<version.maven-surefire-plugin>2.19.1</version.maven-surefire-plugin>
 		<version.org.jacoco.jacoco-maven-plugin>0.7.7.201606060606</version.org.jacoco.jacoco-maven-plugin>
@@ -92,9 +92,9 @@
 			</plugin>
 
 			<plugin>
-				<groupId>com.mycila.maven-license-plugin</groupId>
-				<artifactId>maven-license-plugin</artifactId>
-				<version>${version.maven-license-plugin}</version>
+				<groupId>com.mycila</groupId>
+				<artifactId>license-maven-plugin</artifactId>
+				<version>${version.license-maven-plugin}</version>
 				<configuration>
 					<header>LICENSE</header>
 					<strictCheck>true</strictCheck>
@@ -103,6 +103,11 @@
 						<exclude>**/README.md</exclude>
 						<exclude>**/LICENSE</exclude>
 						<exclude>**/.gitignore</exclude>
+						<exclude>**/.travis.yml</exclude>
+						<exclude>**/pom.xml</exclude>
+						<exclude>src/main/resources/**</exclude>
+						<exclude>src/test/resources/**</exclude>
+						<exclude>travis-maven-settings.xml</exclude>
 					</excludes>
 				</configuration>
 			</plugin>
