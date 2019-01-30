@@ -7,6 +7,10 @@ env:
   global:
     - NEXUS_USERNAME=travis
     - secure: CVq4+X38KqqQ2GcNtF2ul5CyFtZk/27hkslepD39eNCFCJ3jb0pFOh3YVf3OxuymuERvITvo8RukyphQegeyZoFnTnVLTjaVn7IpYAaoave6SJOJ3fzMuKr9emrVkk29s4/NHlBcXDzfXZTkY1FAoWcNusfXYaElDWBoZfLQMhc=
-  
-after_success:
-  - "[ $TRAVIS_JDK_VERSION == \"oraclejdk8\" ] && { mvn clean deploy --settings travis-maven-settings.xml; };"
+
+cache:
+    directories:
+        - $HOME/.m2
+
+script:
+    - mvn clean deploy --settings travis-maven-settings.xml
