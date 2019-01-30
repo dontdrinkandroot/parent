@@ -38,25 +38,25 @@
 	<repositories>
 		<repository>
 			<id>public</id>
-			<url>https://maven.dontdrinkandroot.net/content/groups/public</url>
+            <url>https://maven.dontdrinkandroot.net/groups/public</url>
 		</repository>
 	</repositories>
 
 	<pluginRepositories>
 		<pluginRepository>
 			<id>public</id>
-			<url>https://maven.dontdrinkandroot.net/content/groups/public</url>
+            <url>https://maven.dontdrinkandroot.net/groups/public</url>
 		</pluginRepository>
 	</pluginRepositories>
 
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
-			<url>https://maven.dontdrinkandroot.net/content/repositories/releases</url>
+            <url>https://maven.dontdrinkandroot.net/repos/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
-			<url>https://maven.dontdrinkandroot.net/content/repositories/snapshots</url>
+            <url>https://maven.dontdrinkandroot.net/repos/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
