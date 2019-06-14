@@ -35,7 +35,7 @@
 	<repositories>
 
 		<repository>
-			<id>public</id>
+			<id>ddrpublic</id>
             <url>https://maven.dontdrinkandroot.net/groups/public</url>
 		</repository>
 
@@ -44,7 +44,7 @@
 	<pluginRepositories>
 
 		<pluginRepository>
-			<id>public</id>
+			<id>ddrpublic</id>
             <url>https://maven.dontdrinkandroot.net/groups/public</url>
 		</pluginRepository>
 
@@ -53,12 +53,12 @@
 	<distributionManagement>
 
 		<repository>
-			<id>releases</id>
+			<id>ddrreleases</id>
             <url>https://maven.dontdrinkandroot.net/repos/releases</url>
 		</repository>
 
 		<snapshotRepository>
-			<id>snapshots</id>
+			<id>ddrsnapshots</id>
             <url>https://maven.dontdrinkandroot.net/repos/snapshots</url>
 		</snapshotRepository>
 
